@@ -1,0 +1,47 @@
+﻿@using StorePhones.DAL.Entities;
+@model IEnumerable<Phone>;
+
+
+@{
+    ViewData["Title"] = "Phones";
+    //<div class="m-auto">
+    //    <table class="table-bordered">
+    //        <thead>
+    //            <tr>
+    //                <td>Id</td>
+    //                <td>Name</td>
+    //                <td>Description</td>
+    //                <td>Price</td>
+    //            </tr>
+    //        </thead>
+    //        <tbody>
+    //            @foreach (var item in Model)
+    //            {
+    //                <tr>
+    //                    <td>@item.Id</td>
+    //                    <td>@item.Name</td>
+    //                    <td>@item.Description</td>
+    //                    <td>@item.Price</td>
+    //                </tr>
+    //            }
+    //        </tbody>
+    //    </table>
+    //</div>
+@foreach (var phone in @Model)
+{
+    <div class="d-flex justify-content-between m-3">
+        <img src="~/images/iphone15.jpg" class="img-fluid" style="height:100px;"/>
+        <div>
+            <div>@phone.Name</div>
+            <div>@phone.Description</div>
+        </div>
+        <div>
+            <div>@phone.Price.ToString("C")</div>
+            <a class="but but-primary border border-2">Buy</a>
+        </div>
+       
+    </div>
+}
+
+
+}

@@ -1,0 +1,16 @@
+﻿@using StorePhones.PL.ViewModels;
+
+@model PhoneModelView;
+
+@{
+
+ViewData["Title"] = "Add Phone";
+
+    <form method="post" class="d-flex bg-danger p-2 flex-column">
+        <input type="text" class="m-2" placeholder="Name" name="Name" />
+        <input type="text" class="m-2" placeholder="Description" name="Description" />
+        <input type="number" class="m-2" placeholder="Price" name="Price" />
+        <input type="submit" class="btn btn-primary" value="Add" />
+    </form>
+
+}
