@@ -2,8 +2,6 @@
 using Microsoft.Data.SqlClient;
 using StorePhones.DAL.Entities;
 using StorePhones.DAL.Interfaces;
-using System.ComponentModel.DataAnnotations;
-using System.Xml.Linq;
 
 namespace StorePhones.DAL.Repositories
 {
